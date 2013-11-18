@@ -1,1 +1,1 @@
-the shell for some software installed
+something software install bash
