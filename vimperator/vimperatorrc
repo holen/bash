@@ -1,0 +1,72 @@
+highlight Hint font-size:150%;color:white;background-color:red;padding:2px;
+set complete=sbfh
+set defsearch=google
+set titlestring="Firefox - W"
+set ic
+set hlsearch
+
+set editor="/usr/bin/vim -f"
+set history=1000
+set hintchars=qwerasdfuiojklzxcv
+set focuscontent
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" command
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" open google
+command -nargs=* gg tabopen google <args>
+command -nargs=* gd tabopen baidu <args>
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 安全
+""""""""""""""""""""""""""""""""""""""""""""""""""
+command noimg set! permissions.default.image=2
+command ysimg set! permissions.default.image=1
+command nojs set! javascript.enabled=false
+command ysjs set! javascript.enabled=true
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 中文
+""""""""""""""""""""""""""""""""""""""""""""""""""
+set nextpattern+=下一页,下页
+set previouspattern+=上一页,上页
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 代理
+""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <F8> :bmarks<CR>
+nnoremap <silent> <C-L> :emenu 文件.打开位置…<CR>
+
+javascript << EOF
+  useProxy1 = function() {
+    liberator.execute('set! network.proxy.socks=localhost');
+    liberator.execute('set! network.proxy.socks_port=2201');
+    liberator.execute('set! network.proxy.socks_remote_dns=true');
+    liberator.execute('set! network.proxy.type=1');
+  }
+  useProxy2 = function() {
+    liberator.execute('set! network.proxy.socks=localhost');
+    liberator.execute('set! network.proxy.socks_port=2202');
+    liberator.execute('set! network.proxy.socks_remote_dns=true');
+    liberator.execute('set! network.proxy.type=1');
+  }
+  useProxy3 = function() {
+    liberator.execute('set! network.proxy.socks=localhost');
+    liberator.execute('set! network.proxy.socks_port=2203');
+    liberator.execute('set! network.proxy.socks_remote_dns=true');
+    liberator.execute('set! network.proxy.type=1');
+  }
+  clearProxy = function() {
+    liberator.execute('set! network.proxy.type=0');
+  }
+EOF
+
+nnoremap <silent> <F1> :js useProxy1()<CR>
+nnoremap <silent> <F2> :js useProxy2()<CR>
+nnoremap <silent> <F3> :js useProxy3()<CR>
+nnoremap <silent> <F10> :js clearProxy()<CR> 
+
