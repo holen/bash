@@ -5,7 +5,8 @@ set titlestring="Firefox - W"
 set ic
 set hlsearch
 
-set editor="/usr/bin/vim -f"
+"set editor="/usr/bin/vim -f"
+set editor="bash /home/zhl/vim.sh"
 set history=1000
 set hintchars=qwerasdfuiojklzxcv
 set focuscontent
