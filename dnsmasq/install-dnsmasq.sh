@@ -4,7 +4,11 @@
 apt-get install dnsmasq
 
 ####
-sed -i 's/dns-nameservers.*/dns-nameservers 127.0.0.1/g' /etc/network/interfaces
+if [[ $(grep dns-nameservers /etc/network/interfaces) ]]; then
+	sed -i 's/dns-nameservers.*/dns-nameservers 127.0.0.1/g' /etc/network/interfaces
+else
+	sed -i "/gateway/a dns-nameservers 127.0.0.1" >> /etc/network/interfaces
+fi
 /etc/init.d/networking restart
 
 ####
