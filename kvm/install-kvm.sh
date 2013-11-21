@@ -1,7 +1,14 @@
 ###   --- install bridge-utils --
 apt-get install bridge-utils
 
+cp /etc/network/interfaces /tmp/interfaces
+echo "" > /etc/network/interfaces
+
 ### --- configure bridge
+echo "
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet manual
 
@@ -14,13 +21,14 @@ bridge_ports eth0
 bridge_stp off
 bridge_fd 0
 bridge_maxwait 0
+" >> /etc/network/interfaces
 
 ###  show net
 ip addr show
 brctl show
 
 ### --- install KVM --
-apt-get install qemu-kvm libvirt-bin virtinst virt-top
+apt-get install -y qemu-kvm libvirt-bin virtinst virt-top
 
 # --- adjust your system's "swappiness" parameter --
 sysctl vm.swappiness=0
@@ -65,14 +73,14 @@ virsh pool-autostart kvmdb
 
 # 创建新的虚拟机gT
 ###  standard
-/usr/bin/virt-install --connect qemu:///system \
--n vm11 \
--r 2048 \
---vcpus=2 \
---arch=x86_64 \
---disk path=/data/kvmdb/vm11.img,format=qcow2,size=20,bus=virtio,cache=none \   
--c /data/isos/CentOS-5.6-x86_64-atl1e-netinstall.iso \
- --vnclisten=0.0.0.0 --vncport=0 --vnc \
---noautoconsole \
---os-type linux \ 
---accelerate --network=bridge:br0,model=virtio --hvm
+#/usr/bin/virt-install --connect qemu:///system \
+#-n vm11 \
+#-r 2048 \
+#--vcpus=2 \
+#--arch=x86_64 \
+#--disk path=/data/kvmdb/vm11.img,format=qcow2,size=20,bus=virtio,cache=none \   
+#-c /data/isos/CentOS-5.6-x86_64-atl1e-netinstall.iso \
+# --vnclisten=0.0.0.0 --vncport=0 --vnc \
+#--noautoconsole \
+#--os-type linux \ 
+#--accelerate --network=bridge:br0,model=virtio --hvm
