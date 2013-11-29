@@ -96,6 +96,11 @@ $ dpkg -p package_name 查看包的具体信息
 $ dpkg -r package_name 删除一个已安装的包(保留配置信息)  
 $ dpkg -P package_name 删除一个已安装的包（不保留配置信息）  
 ## Other options
-$ fpm -s dir -t deb -n share -v 0.3 --description "something testing" --license 'ubuntu 12.04.3' /data/share02   
-  --description DESCRIPTION     Add a description for this package.  
-  --license LICENSE             (optional) license name for this packag  
+$ fpm -s dir -t deb -n share -v 0.1 --directories /tmp/file --prefix /tmp -f --description "something testing" --license 'ubuntu 12.04.3' -C /tmp/ file
+
+    --description DESCRIPTION     Add a description for this package.  
+    --license LICENSE             (optional) license name for this packag  
+    --prefix PREFIX               A path to prefix files with when building the target package.
+    --directories DIRECTORIES     Mark a directory as being owned by the package
+    -f, --force                   Force output even if it will overwrite an existing file
+    -C CHDIR                      Change directory to here before searching for files

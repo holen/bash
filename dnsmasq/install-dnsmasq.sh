@@ -15,9 +15,13 @@ fi
 cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
 echo ''> /etc/dnsmasq.conf
 
-echo "conf-dir=/etc/dnsmasq.d
+echo "
 resolv-file=/etc/dnsmasq-resolv
+interface=br0
+bind-interfaces
 addn-hosts=/etc/dnsmasq-hosts
+#dhcp-range=10.10.10.200,10.10.10.250,48h
+#log-dhcp
 log-queries" >> /etc/dnsmasq.conf
 
 echo "nameserver 8.8.8.8" > /etc/dnsmasq-resolv
