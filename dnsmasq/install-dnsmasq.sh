@@ -12,6 +12,8 @@ fi
 /etc/init.d/networking restart
 
 ####
+echo "IGNORE_RESOLVCONF=yes" >> /etc/default/dnsmasq
+
 cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak
 echo ''> /etc/dnsmasq.conf
 
