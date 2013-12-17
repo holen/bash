@@ -61,6 +61,13 @@ add_disk(){
 	/etc/init.d/libvirt-bin restart
 }
 
+### $1 --> origin_vm $2 --> target_vm
+virt_clone(){
+    array=`grep 'source file' /etc/libvirt/qemu/${1}.xml | awk -F"'" '{print $2}' | sed "s/${1}/${2}/g"`
+    disk_str=`for var in ${array[@]} ;do echo -n "-f $var "; done;`
+    virt-clone --connect=qemu:///system -o $1 -n $2 $disk_str
+}
+
 if [ $# -lt 1 ];then
 	echo "Please input enough parameter ... OR usage bash create-kvm -h "
 	exit 1
@@ -76,6 +83,7 @@ case "$opt" in
 	-h 				-->	more info
 	-c temp_name vm_name memsize	-->	clone temp
 		i.e. create-kvm.sh -c tm1 vm100 1G
+        -C origin_vm target_vm          --> clone temp use virt-clone
 	-D vm_name			-->	remove vm
 	-d vm_name disk_name size	-->	hotplug a new disk
 		i.e. create-kvm.sh vm100 disk200 200G
@@ -105,6 +113,16 @@ case "$opt" in
 			fi
 		fi
 		;;
+    "-C")
+        shift
+		if [ $# != 2 ];
+		then
+			echo "No enough argument value for option"
+			exit 1
+		else
+            virt_clone $1 $2
+        fi
+        ;;
 	"-D")
 		shift
 		delete_vm $1
