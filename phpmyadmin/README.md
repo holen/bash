@@ -2,7 +2,7 @@
 $ apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y  
 
 # install php  
-$ apt-get install php5 libapache2-mod-php5 php5-mcryp php5-curl -y   
+$ apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-curl -y   
 
 # install phpmyadmin  
 apt-get install phpmyadmin -y   
@@ -20,7 +20,33 @@ vim /var/www/info.php
 <?php  
 phpinfo();  
 ?>  
-$ /etc/init.d/apache2 restart  
+
+    vim /etc/apache2/sites-available/test.com
+    <VirtualHost *:80>
+      ServerAdmin webmaster@localhost
+
+      DocumentRoot /var/www/test.com/
+      ServerName test.com
+      ServerAlias *.test.com
+      <Directory />
+          Options FollowSymLinks
+          AllowOverride All
+      </Directory>
+
+      ErrorLog ${APACHE_LOG_DIR}/error.log
+
+      # Possible values include: debug, info, notice, warn, error, crit,
+      # alert, emerg.
+      LogLevel warn
+
+      CustomLog ${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>
+
+    chown -R  www-data.www-data /var/www/test.com
+    a2ensite www.test.com
+    service apache2 reload
+    a2enmod rewrite
+    service apache2 restart
 
 # install ZendOptimizer  
 Download ZendGuardLoader-70429-PHP-5.4-linux-glibc23-x86_64.tar.gz  
