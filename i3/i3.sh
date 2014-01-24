@@ -8,6 +8,10 @@ apt-get update
 apt-get install i3 unclutter
 add-apt-repository ppa:diodon-team/stable
 apt-get update
+
+# diodon --> Access clipboard history with an application indicator.
 apt-get install diodon
 
-apt-get install -y aria2 cmus vlc wicd ttf-wqy-microhei ttf-wqy-microhei
+apt-get install -y aria2 cmus vlc wicd scrot fet ttf-wqy-microhei ttf-wqy-microhei
+
+
