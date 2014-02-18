@@ -20,6 +20,8 @@ apt-get install diodon
 # scrot --> capture a screenshot 
 # feh   --> image viewer and cataloguer
 # sdcv  --> console version of StarDict program
-apt-get install -y aria2 apvlv cmus vlc wicd scrot feh sdcv ttf-wqy-microhei ttf-wqy-microhei
-
-
+# StarDict --> A Cross-Platform and international dictionary written in Gtk2 http://www.stardict.org/
+apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ttf-wqy-microhei ttf-wqy-microhei
+# Download dictionary and mv to /usr/share/stardict/dic/
+wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
+wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.bz2
