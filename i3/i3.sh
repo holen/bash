@@ -12,6 +12,14 @@ apt-get update
 # diodon --> Access clipboard history with an application indicator.
 apt-get install diodon
 
-apt-get install -y aria2 cmus vlc wicd scrot fet sdcv apvlv ttf-wqy-microhei ttf-wqy-microhei
+# aira2 --> download tool
+# apvlv --> pdf tool
+# cmus  --> Music player
+# vlc   --> Media player
+# wicd  --> wireless network connection manager
+# scrot --> capture a screenshot 
+# feh   --> image viewer and cataloguer
+# sdcv  --> console version of StarDict program
+apt-get install -y aria2 apvlv cmus vlc wicd scrot feh sdcv ttf-wqy-microhei ttf-wqy-microhei
 
 
