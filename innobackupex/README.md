@@ -29,6 +29,12 @@ NFS server
     vim /etc/exports
     /data/backup/mysql      10.0.0.10(rw,sync,no_root_squash,no_subtree_check)
     
+Modify nfs-server idmapd  
+vim /etc/idmapd.conf
+    
+    Nobody-User = root
+    Nobody-Group = root
+
 Mysql (nfs client)
 
     apt-get install nfs-common
