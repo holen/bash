@@ -1,0 +1,72 @@
+#!/usr/bin/perl -w
+
+# -----------------------------
+#
+# Comment:
+#   2.4 kernels require more routing setup
+#   refer to bash script writen by Steve Cowles 5/9/2000
+# -----------------------------
+
+use strict;
+
+my $tun_cfg = '/etc/tunnel.conf';
+open my $fh, $tun_cfg or die "unable to locate tunnel config file: $tun_cfg";
+
+my %tuns;
+while (<$fh>) {
+    m!^(\w{1,5})\s+([\d\.]+)\s+([\d\.]+)\s+([\d\.]+)\s+([\d\./,]+)(?:\s*#.*)?$! || next;
+    $tuns{$1} = [$1, $2, $3, $4, $5];
+}
+
+my $action = $ARGV[0] =~ /^(start|stop|restart)(?:all)?$/ ? $ARGV[0] : 'help';
+my $mytun  = $ARGV[1] && $tuns{$ARGV[1]} ? $tuns{$ARGV[1]} : '';
+{
+    no strict 'refs';
+    &$action($mytun);
+}
+
+sub start {
+    my $tun = shift || do {print "unknown tunnel\n"; return};
+    print "starting $$tun[0]\n";
+
+    system("ip tunnel add $$tun[0] mode ipip remote $$tun[3]");
+    system("ip link set dev $$tun[0] up");
+    system("ip addr add $$tun[1] peer $$tun[2] dev $$tun[0]");
+
+    foreach (split /,/, $$tun[4]) {
+        system("ip route add $_ via $$tun[3] dev $$tun[0] onlink");
+    }
+
+    1;
+}
+
+sub stop {
+    my $tun = shift || do {print "unknown tunnel\n"; return};
+    if (1 || `ip link show $$tun[0] 2>/dev/null`) {
+        print "Stopping $$tun[0]\n";
+        system("ip link set dev $$tun[0] down");
+    }        
+
+    if (1 || `ip addr show $$tun[0] 2>/dev/null`) {
+        print "Deleting $$tun[0]\n";
+        system("ip tunnel del $$tun[0]");
+    }
+    1;
+}
+
+sub restart {
+    my @args = @_;
+    stop(@args);
+    sleep 1;
+    start(@args);
+}
+
+sub startall   { start($_)     foreach (sort values %tuns) }
+sub stopall    { stop($_)      foreach (sort values %tuns) }
+sub restartall { restart($_)   foreach (sort values %tuns) }
+
+sub help {
+    print "Usage: tun [start|stop|restart|startall|stopall|restartall] [tunnel name]\n";
+    print "       tunnel name does nothing when start/stop/restart all tunnels\n";
+}
+
