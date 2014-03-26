@@ -6,4 +6,6 @@ deb-src http://repo.percona.com/apt precise main" >> /etc/apt/sources.list
 apt-get update
 apt-get install percona-xtrabackup 
 
-#innobackupex --copy-back /data/mysql-two/
+#innobackupex --no-timestamp /data/backup/full/
+#innobackupex --apply-log /data/backup/full/ 
+#innobackupex --copy-back /data/backup/full/
