@@ -12,16 +12,19 @@ apt-get update
 # diodon --> Access clipboard history with an application indicator.
 apt-get install diodon
 
-# aira2 --> download tool
-# apvlv --> pdf tool
-# cmus  --> Music player
-# vlc   --> Media player
-# wicd  --> wireless network connection manager
-# scrot --> capture a screenshot 
-# feh   --> image viewer and cataloguer
-# sdcv  --> console version of StarDict program
+# vlc    --> Media player
+# feh    --> image viewer and cataloguer
+# cmus   --> Music player
+# wicd   --> wireless network connection manager
+# sdcv   --> console version of StarDict program
+# aira2  --> download tool
+# apvlv  --> pdf tool
+# scrot  --> capture a screenshot 
+# ipcalc --> An IP Netmask/broadcast/etc calculator
 # StarDict --> A Cross-Platform and international dictionary written in Gtk2 http://www.stardict.org/
-apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ttf-wqy-microhei ttf-wqy-microhei
+# alsamixer - soundcard mixer for ALSA soundcard driver, with ncurses interface
+apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer ttf-wqy-microhei ttf-wqy-microhei
+
 # Download dictionary and mv to /usr/share/stardict/dic/
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.bz2

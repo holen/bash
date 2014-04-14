@@ -84,3 +84,12 @@ virsh pool-autostart kvmdb
 #--noautoconsole \
 #--os-type linux \ 
 #--accelerate --network=bridge:br0,model=virtio --hvm
+qemu-img create -f qcow2 disk202.img 480G
+qemu-img info disk202.img
+virsh edit vm208
+ <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2' cache='writethrough'/>
+      <source file='/data/kvmdb/disk202.img'/>
+      <target dev='vdb' bus='virtio'/>
+    </disk> 
+
