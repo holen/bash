@@ -28,3 +28,6 @@ apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsa
 # Download dictionary and mv to /usr/share/stardict/dic/
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.bz2
+
+xrandr --output VGA1 --mode 1440x900 --left-of HDMI1
+xrandr --output HDMI1 --mode 1600x900 --right-of VGA1
