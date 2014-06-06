@@ -6,12 +6,16 @@ megacli -LDPDInfo -aALL | grep 'Firmware state' | grep -c Online
 
     megacli -PDList -aALL  #E is the enclosure device ID ,  S is the slot number   
 
-查看物理磁盘重建进度
+test 
 
-    megacli -PDRbld -ShowProg -PhysDrv [:7] -a0  
+    dd if=/dev/zero of=test.dd bs=1024M count=20
 
 将某块物理盘下线/上线
 
     megacli -PDOffline -PhysDrv [:7] -a0
     megacli -PDOnline -PhysDrv [:7] -a0
+
+查看物理磁盘重建进度
+
+    megacli -PDRbld -ShowProg -PhysDrv [:7] -a0  
 
