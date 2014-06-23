@@ -23,7 +23,8 @@ apt-get install diodon
 # ipcalc --> An IP Netmask/broadcast/etc calculator
 # StarDict --> A Cross-Platform and international dictionary written in Gtk2 http://www.stardict.org/
 # alsamixer - soundcard mixer for ALSA soundcard driver, with ncurses interface
-apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer ttf-wqy-microhei ttf-wqy-microhei
+# landscape-common - Display a summary of the current system status
+apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer ttf-wqy-microhei ttf-wqy-microhei landscape-common
 
 # Download dictionary and mv to /usr/share/stardict/dic/
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
