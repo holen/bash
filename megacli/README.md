@@ -19,3 +19,6 @@ test
 
     megacli -PDRbld -ShowProg -PhysDrv [:7] -a0  
 
+## hpacucli
+
+    hpacucli ctrl slot=1 show config detail
