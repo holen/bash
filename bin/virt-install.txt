@@ -1,0 +1,1 @@
+virt-install --connect qemu:///system -n vm102 -r 2048 --vcpus=2 --arch=x86_64 --disk path=/data/kvmdb/vm102.vda,format=qcow2,size=40,bus=virtio,cache=writethrough -c /data/autoiso/ubuntu-12.04.3-server.iso --vnclisten=0.0.0.0 --vncport=0 --vnc --noautoconsole --os-type linux --accelerate --network=bridge:br0,model=virtio --hvm

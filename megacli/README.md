@@ -21,4 +21,15 @@ test
 
 ## hpacucli
 
-    hpacucli ctrl slot=1 show config detail
+    hpacucli ctrl all show    # 查看所有控制器状态
+    hpacucli ctrl all show status   # 查看所有控制器状态
+    hpacucli ctrl slot=1 show config detail 查看slot 1阵列信息详细状态
+    hpacucli ctrl slot=1 array all show # 查看slot 1所有这列信息
+    hpacucli ctrl slot=0 array B ld all show #查看slot 0 阵列B 所有逻辑驱动器信息 
+    hpacucli ctrl slot=0 array B pd all show  #查看slot 0 阵列B 所有物理驱动器信息 
+    hpacucli ctrl slot=0 array A modify spares=2I:1:6 # 在线修改阵列热备盘
+    hpacucli ctrl slot=0 Array A remove spares=2I:1:6 # 在线删除阵列热备盘
+
+ 
+
+

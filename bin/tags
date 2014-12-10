@@ -1,0 +1,251 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	rijndael.py	/^A = [[1, 1, 1, 1, 1, 0, 0, 0],$/;"	v
+AA	rijndael.py	/^AA = [[0] * 8 for i in xrange(4)]$/;"	v
+Attack	wifite.py	/^class Attack(object):$/;"	c
+B	rijndael.py	/^B = [0, 1, 1, 0, 0, 0, 1, 1]$/;"	v
+B	wifite.py	/^B  = '\\033[34m' # blue$/;"	v
+BLOCK_SIZE	pwd.py	/^BLOCK_SIZE = 32$/;"	v
+C	wifite.py	/^C  = '\\033[36m' # cyan$/;"	v
+CapFile	wifite.py	/^class CapFile:$/;"	c
+Client	wifite.py	/^class Client:$/;"	c
+ConfirmCorrectPlatform	wifite.py	/^    def ConfirmCorrectPlatform(self):$/;"	m	class:RunConfiguration
+ConfirmRunningAsRoot	wifite.py	/^    def ConfirmRunningAsRoot(self):$/;"	m	class:RunConfiguration
+Connect	EasyXMS/EasyXMS.py	/^class Connect(object):$/;"	c
+ConnectSFTP	EasyXMS/EasyXMS.py	/^class ConnectSFTP(Connect):$/;"	c
+ConnectSSH	EasyXMS/EasyXMS.py	/^class ConnectSSH(Connect):$/;"	c
+CreateTempFolder	wifite.py	/^    def CreateTempFolder(self):$/;"	m	class:RunConfiguration
+DN	wifite.py	/^DN = open(os.devnull, 'w')$/;"	v
+Dir_mkdir	full-bak.sh	/^Dir_mkdir()$/;"	f
+ERRLOG	wifite.py	/^ERRLOG = open(os.devnull, 'w')$/;"	v
+EasyXMS_log	EasyXMS/EasyXMS.py	/^    EasyXMS_log = 'paramiko.log'                               # 指定使用paramiko时，产生的日志文件$/;"	v	class:StartExecAction
+EndAttack	wifite.py	/^    def EndAttack(self):$/;"	m	class:Attack
+EndAttack	wifite.py	/^    def EndAttack(self):$/;"	m	class:WEPAttack
+EndAttack	wifite.py	/^    def EndAttack(self):$/;"	m	class:WPAAttack
+EndAttack	wifite.py	/^    def EndAttack(self):$/;"	m	class:WPSAttack
+G	rijndael.py	/^G = [[2, 1, 1, 3],$/;"	v
+G	wifite.py	/^G  = '\\033[32m' # green$/;"	v
+GR	wifite.py	/^GR = '\\033[37m' # gray$/;"	v
+InputValue	EasyXMS/EasyXMS.py	/^class InputValue(object):$/;"	c
+KEY_SIZE	pwd.py	/^KEY_SIZE = 16$/;"	v
+MutilThreadControl	EasyXMS/EasyXMS.py	/^class MutilThreadControl(threading.Thread):$/;"	c
+O	wifite.py	/^O  = '\\033[33m' # orange$/;"	v
+OUTLOG	wifite.py	/^OUTLOG = open(os.devnull, 'w')$/;"	v
+P	wifite.py	/^P  = '\\033[35m' # purple$/;"	v
+PrintHelp	EasyXMS/EasyXMS.py	/^class PrintHelp(object):$/;"	c
+Print_error	full-bak.sh	/^Print_error()$/;"	f
+Print_error	full-mon.sh	/^Print_error()$/;"	f
+R	wifite.py	/^R  = '\\033[31m' # red$/;"	v
+RUN_CONFIG	wifite.py	/^    RUN_CONFIG = RunConfiguration()$/;"	v	class:WPSAttack
+ReadWriteConfigFile	EasyXMS/EasyXMS.py	/^class ReadWriteConfigFile(object):$/;"	c
+RunAttack	wifite.py	/^    def RunAttack(self):$/;"	m	class:Attack
+RunAttack	wifite.py	/^    def RunAttack(self):$/;"	m	class:WEPAttack
+RunAttack	wifite.py	/^    def RunAttack(self):$/;"	m	class:WPAAttack
+RunAttack	wifite.py	/^    def RunAttack(self):$/;"	m	class:WPSAttack
+RunConfiguration	wifite.py	/^class RunConfiguration:$/;"	c
+RunEngine	wifite.py	/^class RunEngine:$/;"	c
+S	rijndael.py	/^S =  [0] * 256$/;"	v
+Si	rijndael.py	/^Si = [0] * 256$/;"	v
+Start	wifite.py	/^    def Start(self):$/;"	m	class:RunEngine
+StartExecAction	EasyXMS/EasyXMS.py	/^class StartExecAction(object):$/;"	c
+T1	rijndael.py	/^T1 = []$/;"	v
+T2	rijndael.py	/^T2 = []$/;"	v
+T3	rijndael.py	/^T3 = []$/;"	v
+T4	rijndael.py	/^T4 = []$/;"	v
+T5	rijndael.py	/^T5 = []$/;"	v
+T6	rijndael.py	/^T6 = []$/;"	v
+T7	rijndael.py	/^T7 = []$/;"	v
+T8	rijndael.py	/^T8 = []$/;"	v
+Target	wifite.py	/^class Target:$/;"	c
+U1	rijndael.py	/^U1 = []$/;"	v
+U2	rijndael.py	/^U2 = []$/;"	v
+U3	rijndael.py	/^U3 = []$/;"	v
+U4	rijndael.py	/^U4 = []$/;"	v
+W	wifite.py	/^W  = '\\033[0m'  # white (normal)$/;"	v
+WEPAttack	wifite.py	/^class WEPAttack(Attack):$/;"	c
+WPAAttack	wifite.py	/^class WPAAttack(Attack):$/;"	c
+WPSAttack	wifite.py	/^class WPSAttack(Attack):$/;"	c
+__init__	EasyXMS/EasyXMS.py	/^    def __init__(self):$/;"	m	class:Connect
+__init__	EasyXMS/EasyXMS.py	/^    def __init__(self):$/;"	m	class:InputValue
+__init__	EasyXMS/EasyXMS.py	/^    def __init__(self):$/;"	m	class:PrintHelp
+__init__	rijndael.py	/^    def __init__(self, key, block_size = 16):$/;"	m	class:rijndael
+__init__	wifite.py	/^    def __init__(self):$/;"	m	class:RunConfiguration
+__init__	wifite.py	/^    def __init__(self, bssid, power, data, channel, encryption, ssid):$/;"	m	class:Target
+__init__	wifite.py	/^    def __init__(self, bssid, station, power):$/;"	m	class:Client
+__init__	wifite.py	/^    def __init__(self, filename, ssid, bssid):$/;"	m	class:CapFile
+__init__	wifite.py	/^    def __init__(self, iface, target, clients, config):$/;"	m	class:WEPAttack
+__init__	wifite.py	/^    def __init__(self, iface, target, clients, config):$/;"	m	class:WPAAttack
+__init__	wifite.py	/^    def __init__(self, iface, target, config):$/;"	m	class:WPSAttack
+__init__	wifite.py	/^    def __init__(self, run_config):$/;"	m	class:RunEngine
+__metaclass__	wifite.py	/^    __metaclass__ = abc.ABCMeta$/;"	v	class:Attack
+add_commas	wifite.py	/^def add_commas(n):$/;"	f
+add_disk	create-kvm.sh	/^add_disk(){$/;"	f
+add_disk	create-kvm.sh.bak	/^add_disk(){$/;"	f
+alog	rijndael.py	/^alog = [1]$/;"	v
+analyze_capfile	wifite.py	/^    def analyze_capfile(self, capfile):$/;"	m	class:RunEngine
+api_id	pwd.py	/^api_id  = ""$/;"	v
+api_key	pwd.py	/^api_key = "b427852fcd9a5a1b1228ab22ccd1c934"$/;"	v
+attack_interrupted_prompt	wifite.py	/^def attack_interrupted_prompt():$/;"	f
+attack_wep	wifite.py	/^    def attack_wep(self):$/;"	m	class:WEPAttack
+attack_wps	wifite.py	/^    def attack_wps(self):$/;"	m	class:WPSAttack
+banner	wifite.py	/^def banner(RUN_CONFIG):$/;"	f
+box	rijndael.py	/^box = [[0] * 8 for i in xrange(256)]$/;"	v
+build_opt_parser	wifite.py	/^    def build_opt_parser(self):$/;"	m	class:RunConfiguration
+checkGCC	EasyXMS/one_key_install_paramiko.sh	/^checkGCC(){$/;"	f
+checkIPInfo	EasyXMS/EasyXMS.py	/^    def checkIPInfo(self,ipinfo):$/;"	m	class:ReadWriteConfigFile
+checkPython	EasyXMS/one_key_install_paramiko.sh	/^checkPython(){$/;"	f
+clearScreen	EasyXMS/EasyXMS.py	/^    def clearScreen(self):$/;"	m	class:StartExecAction
+clone_temp	create-kvm.sh	/^clone_temp(){$/;"	f
+clone_temp	create-kvm.sh.bak	/^clone_temp(){$/;"	f
+closeConnections	EasyXMS/EasyXMS.py	/^    def closeConnections(self):$/;"	m	class:InputValue
+command_history	EasyXMS/EasyXMS.py	/^    command_history = 'command_history.log'                   # 命令历史记录$/;"	v	class:StartExecAction
+command_result_history	EasyXMS/EasyXMS.py	/^    command_result_history = 'command_result_history.log'    # 命令执行结果的历史记录$/;"	v	class:StartExecAction
+configfile	EasyXMS/EasyXMS.py	/^    configfile = 'server.conf'                                 # 指定服务器IP地址配置文件$/;"	v	class:StartExecAction
+connectSFTP	EasyXMS/EasyXMS.py	/^    def connectSFTP(self):$/;"	m	class:ConnectSFTP
+connectSFTP_obj	EasyXMS/EasyXMS.py	/^    connectSFTP_obj = ConnectSFTP()                             # 初始化一个SFTP对象$/;"	v	class:StartExecAction
+connectSSH	EasyXMS/EasyXMS.py	/^    def connectSSH(self):$/;"	m	class:ConnectSSH
+connectSSH_obj	EasyXMS/EasyXMS.py	/^    connectSSH_obj = ConnectSSH()                               # 初始化一个SSH类对象$/;"	v	class:StartExecAction
+cox	rijndael.py	/^cox = [[0] * 8 for i in xrange(256)]$/;"	v
+decrypt	pwd.py	/^def decrypt(key, encoded):$/;"	f
+decrypt	rijndael.py	/^    def decrypt(self, ciphertext):$/;"	m	class:rijndael
+decrypt	rijndael.py	/^def decrypt(key, block):$/;"	f
+deleteIPFromFile	EasyXMS/EasyXMS.py	/^    def deleteIPFromFile(self):$/;"	m	class:ReadWriteConfigFile
+delete_vm	create-kvm.sh	/^delete_vm(){$/;"	f
+delete_vm	create-kvm.sh.bak	/^delete_vm(){$/;"	f
+disable_monitor_mode	wifite.py	/^    def disable_monitor_mode(self):$/;"	m	class:RunEngine
+emptyConfigFile	EasyXMS/EasyXMS.py	/^    def emptyConfigFile(self):$/;"	m	class:ReadWriteConfigFile
+emptyFileFailure	EasyXMS/EasyXMS.py	/^    def emptyFileFailure(self, e):$/;"	m	class:PrintHelp
+emptySuccessful	EasyXMS/EasyXMS.py	/^    def emptySuccessful(self):$/;"	m	class:PrintHelp
+enable_monitor_mode	wifite.py	/^    def enable_monitor_mode(self, iface):$/;"	m	class:RunEngine
+encrypt	pwd.py	/^def encrypt(key, plaintext):$/;"	f
+encrypt	rijndael.py	/^    def encrypt(self, plaintext):$/;"	m	class:rijndael
+encrypt	rijndael.py	/^def encrypt(key, block):$/;"	f
+enterCommand	EasyXMS/EasyXMS.py	/^    def enterCommand(self):$/;"	m	class:PrintHelp
+enterFilePath	EasyXMS/EasyXMS.py	/^    def enterFilePath(self):$/;"	m	class:PrintHelp
+enterFilePath2	EasyXMS/EasyXMS.py	/^    def enterFilePath2(self):$/;"	m	class:PrintHelp
+exitFunction	EasyXMS/EasyXMS.py	/^    def exitFunction(self):$/;"	m	class:InputValue
+exit_gracefully	wifite.py	/^    def exit_gracefully(self, code=0):$/;"	m	class:RunConfiguration
+fileAppendObject	EasyXMS/EasyXMS.py	/^    def fileAppendObject(self,filename):$/;"	m	class:ReadWriteConfigFile
+generate_random_mac	wifite.py	/^def generate_random_mac(old_mac):$/;"	f
+getCommand	EasyXMS/EasyXMS.py	/^    def getCommand(self):$/;"	m	class:ConnectSSH
+getConnectionPool	EasyXMS/EasyXMS.py	/^    def getConnectionPool(self):$/;"	m	class:Connect
+getDateTime	EasyXMS/EasyXMS.py	/^    def getDateTime(self):$/;"	m	class:PrintHelp
+getDirectoryName	EasyXMS/EasyXMS.py	/^    def getDirectoryName(self, filename, dest):$/;"	m	class:ConnectSFTP
+getFilePath	EasyXMS/EasyXMS.py	/^    def getFilePath(self):$/;"	m	class:ConnectSFTP
+getIPList	EasyXMS/EasyXMS.py	/^    def getIPList(self):$/;"	m	class:Connect
+getThreadNum	EasyXMS/EasyXMS.py	/^    def getThreadNum(self):$/;"	m	class:Connect
+get_aireplay_command	wifite.py	/^    def get_aireplay_command(self, iface, attack_num, target, clients, client_mac):$/;"	m	class:WEPAttack
+get_bssid_from_cap	wifite.py	/^def get_bssid_from_cap(essid, capfile):$/;"	f
+get_essid_from_cap	wifite.py	/^def get_essid_from_cap(bssid, capfile):$/;"	f
+get_iface	wifite.py	/^    def get_iface(self):$/;"	m	class:RunEngine
+get_mac_address	wifite.py	/^def get_mac_address(iface):$/;"	f
+get_revision	wifite.py	/^def get_revision():$/;"	f
+handle_args	wifite.py	/^    def handle_args(self):$/;"	m	class:RunConfiguration
+has_handshake	wifite.py	/^    def has_handshake(self, target, capfile):$/;"	m	class:WPAAttack
+has_handshake_aircrack	wifite.py	/^    def has_handshake_aircrack(self, target, capfile):$/;"	m	class:WPAAttack
+has_handshake_cowpatty	wifite.py	/^    def has_handshake_cowpatty(self, target, capfile, nonstrict=True):$/;"	m	class:WPAAttack
+has_handshake_pyrit	wifite.py	/^    def has_handshake_pyrit(self, target, capfile):$/;"	m	class:WPAAttack
+has_handshake_tshark	wifite.py	/^    def has_handshake_tshark(self, target, capfile):$/;"	m	class:WPAAttack
+help	wifite.py	/^def help():$/;"	f
+iG	rijndael.py	/^iG = [[0] * 4 for i in xrange(4)]$/;"	v
+initIPQueueAndtConnectionPool	EasyXMS/EasyXMS.py	/^    def initIPQueueAndtConnectionPool(self):$/;"	m	class:MutilThreadControl
+initial_check	wifite.py	/^    def initial_check(self):$/;"	m	class:RunEngine
+input_obj	EasyXMS/EasyXMS.py	/^    input_obj = InputValue()                                    # 初始化一个输入类对象$/;"	v	class:StartExecAction
+installEasy_install	EasyXMS/one_key_install_paramiko.sh	/^installEasy_install(){$/;"	f
+installNewGMP	EasyXMS/one_key_install_paramiko.sh	/^installNewGMP(){$/;"	f
+installParamiko	EasyXMS/one_key_install_paramiko.sh	/^installParamiko(){$/;"	f
+installPython27	EasyXMS/one_key_install_paramiko.sh	/^installPython27(){$/;"	f
+invaildCommand	EasyXMS/EasyXMS.py	/^    def invaildCommand(self):$/;"	m	class:PrintHelp
+invaildFilePath	EasyXMS/EasyXMS.py	/^    def invaildFilePath(self,filepath):$/;"	m	class:PrintHelp
+j	rijndael.py	/^    j = (alog[-1] << 1) ^ alog[-1]$/;"	v
+loadFile	EasyXMS/EasyXMS.py	/^    def loadFile(self):$/;"	m	class:ReadWriteConfigFile
+load_cracked	wifite.py	/^    def load_cracked(self):$/;"	m	class:RunConfiguration
+load_old_cracked	wifite.py	/^    def load_old_cracked(self):$/;"	m	class:RunConfiguration
+log	rijndael.py	/^log = [0] * 256$/;"	v
+loopGetValue	EasyXMS/EasyXMS.py	/^    def loopGetValue(self):$/;"	m	class:InputValue
+loopPrintCmd	EasyXMS/EasyXMS.py	/^    def loopPrintCmd(self):$/;"	m	class:PrintHelp
+mac_anonymize	wifite.py	/^def mac_anonymize(iface):$/;"	f
+mac_change_back	wifite.py	/^def mac_change_back():$/;"	f
+mul	rijndael.py	/^def mul(a, b):$/;"	f
+mul4	rijndael.py	/^def mul4(a, bs):$/;"	f
+num_rounds	rijndael.py	/^num_rounds = {16: {16: 10, 24: 12, 32: 14}, 24: {16: 12, 24: 12, 32: 14}, 32: {16: 14, 24: 14, 32: 14}}$/;"	v
+parse_csv	wifite.py	/^    def parse_csv(self, filename):$/;"	m	class:RunEngine
+pivot	rijndael.py	/^            pivot = AA[i][i]$/;"	v
+pivot	rijndael.py	/^    pivot = AA[i][i]$/;"	v
+printAddIPSuccessful	EasyXMS/EasyXMS.py	/^    def printAddIPSuccessful(self, ip):$/;"	m	class:PrintHelp
+printArgsNotenough	EasyXMS/EasyXMS.py	/^    def printArgsNotenough(self):$/;"	m	class:PrintHelp
+printCanNotConnectIP	EasyXMS/EasyXMS.py	/^    def printCanNotConnectIP(self,ip):$/;"	m	class:PrintHelp
+printCannotCreateFile	EasyXMS/EasyXMS.py	/^    def printCannotCreateFile(self,filename,error):$/;"	m	class:PrintHelp
+printCommandResult	EasyXMS/EasyXMS.py	/^    def printCommandResult(self,ip,cmd,out,error):$/;"	m	class:PrintHelp
+printDeleteIPFormat	EasyXMS/EasyXMS.py	/^    def printDeleteIPFormat(self):$/;"	m	class:PrintHelp
+printFileError	EasyXMS/EasyXMS.py	/^    def printFileError(self, e):$/;"	m	class:PrintHelp
+printFileNotExistOrEmpty	EasyXMS/EasyXMS.py	/^    def printFileNotExistOrEmpty(self):$/;"	m	class:PrintHelp
+printFilePath	EasyXMS/EasyXMS.py	/^    def printFilePath(self):$/;"	m	class:PrintHelp
+printHead	EasyXMS/EasyXMS.py	/^    def printHead(self):$/;"	m	class:PrintHelp
+printIPAlreadyInFile	EasyXMS/EasyXMS.py	/^    def printIPAlreadyInFile(self, ip):$/;"	m	class:PrintHelp
+printIPFormat	EasyXMS/EasyXMS.py	/^    def printIPFormat(self):$/;"	m	class:PrintHelp
+printIPNotInFile	EasyXMS/EasyXMS.py	/^    def printIPNotInFile(self, ip):$/;"	m	class:PrintHelp
+printInputIP	EasyXMS/EasyXMS.py	/^    def printInputIP(self):$/;"	m	class:PrintHelp
+printInputIPForDelete	EasyXMS/EasyXMS.py	/^    def printInputIPForDelete(self):$/;"	m	class:PrintHelp
+printInputWrong	EasyXMS/EasyXMS.py	/^    def printInputWrong(self):$/;"	m	class:PrintHelp
+printInvalidIP	EasyXMS/EasyXMS.py	/^    def printInvalidIP(self,info):$/;"	m	class:PrintHelp
+printPrompt	EasyXMS/EasyXMS.py	/^    def printPrompt(self):$/;"	m	class:PrintHelp
+printRemoveIPSuccessful	EasyXMS/EasyXMS.py	/^    def printRemoveIPSuccessful(self,ip):$/;"	m	class:PrintHelp
+printSFTPBePatient	EasyXMS/EasyXMS.py	/^    def printSFTPBePatient(self):$/;"	m	class:PrintHelp
+printSSHBePatient	EasyXMS/EasyXMS.py	/^    def printSSHBePatient(self):$/;"	m	class:PrintHelp
+print_and_exec	wifite.py	/^def print_and_exec(cmd):$/;"	f
+printhelp_obj	EasyXMS/EasyXMS.py	/^    printhelp_obj = PrintHelp()                                 # 初始化一个打印帮助对象$/;"	v	class:StartExecAction
+program_exists	wifite.py	/^def program_exists(program):$/;"	f
+r	rijndael.py	/^    r = mul(2, r)$/;"	v
+r	rijndael.py	/^r = 1$/;"	v
+rcon	rijndael.py	/^rcon = [1]$/;"	v
+readCommandHistory	EasyXMS/EasyXMS.py	/^    def readCommandHistory(self):$/;"	m	class:ReadWriteConfigFile
+readIPAsDict	EasyXMS/EasyXMS.py	/^    def readIPAsDict(self):$/;"	m	class:ReadWriteConfigFile
+readIPFromFile	EasyXMS/EasyXMS.py	/^    def readIPFromFile(self):$/;"	m	class:ReadWriteConfigFile
+readwriteconfigFile_obj	EasyXMS/EasyXMS.py	/^    readwriteconfigFile_obj = ReadWriteConfigFile()             # 初始化一个读写配置文件的对象$/;"	v	class:StartExecAction
+remove_airodump_files	wifite.py	/^def remove_airodump_files(prefix):$/;"	f
+remove_file	wifite.py	/^def remove_file(filename):$/;"	f
+rename	wifite.py	/^def rename(old, new):$/;"	f
+returnDateString	EasyXMS/EasyXMS.py	/^    def returnDateString(self):$/;"	m	class:PrintHelp
+rijndael	rijndael.py	/^class rijndael:$/;"	c
+rtl8187_fix	wifite.py	/^    def rtl8187_fix(self, iface):$/;"	m	class:RunEngine
+run	EasyXMS/EasyXMS.py	/^    def run(self):$/;"	m	class:MutilThreadControl
+s	rijndael.py	/^    s = S[t]$/;"	v
+s	rijndael.py	/^    s = Si[t]$/;"	v
+save_cracked	wifite.py	/^    def save_cracked(self, target):$/;"	m	class:RunConfiguration
+scan	wifite.py	/^    def scan(self, channel=0, iface='', tried_rtl8187_fix=False):$/;"	m	class:RunEngine
+sec_to_hms	wifite.py	/^def sec_to_hms(sec):$/;"	f
+send_interrupt	wifite.py	/^def send_interrupt(process):$/;"	f
+setCommand	EasyXMS/EasyXMS.py	/^    def setCommand(self,command):$/;"	m	class:ConnectSSH
+setConnectionPool	EasyXMS/EasyXMS.py	/^    def setConnectionPool(self, pool):$/;"	m	class:MutilThreadControl
+setFilePath	EasyXMS/EasyXMS.py	/^    def setFilePath(self,filepath):$/;"	m	class:ConnectSFTP
+setInputvalue	EasyXMS/EasyXMS.py	/^    def setInputvalue(self):$/;"	m	class:InputValue
+shifts	rijndael.py	/^shifts = [[[0, 0], [1, 3], [2, 2], [3, 1]],$/;"	v
+startExecAction_obj	EasyXMS/EasyXMS.py	/^    startExecAction_obj = StartExecAction()                     # 初始化一个 开始执行动作对象$/;"	v	class:StartExecAction
+startExecCommand	EasyXMS/EasyXMS.py	/^    def startExecCommand(self):$/;"	m	class:StartExecAction
+startSFTP	EasyXMS/EasyXMS.py	/^    def startSFTP(self):$/;"	m	class:StartExecAction
+strip_handshake	wifite.py	/^    def strip_handshake(self, capfile):$/;"	m	class:WPAAttack
+t	rijndael.py	/^        t = i + 1$/;"	v
+t	rijndael.py	/^    def t(kl, bl):$/;"	f	function:test
+test	rijndael.py	/^def test():$/;"	f
+upgrade	wifite.py	/^    def upgrade(self):$/;"	m	class:RunConfiguration
+uploadFileError	EasyXMS/EasyXMS.py	/^    def uploadFileError(self, src, ip, e):$/;"	m	class:PrintHelp
+uploadFileOK	EasyXMS/EasyXMS.py	/^    def uploadFileOK(self, src, ip):$/;"	m	class:PrintHelp
+url	pwd.py	/^url     = ""  # 不需要 \/api\/index.php$/;"	v
+usage	pwd.py	/^def usage():$/;"	f
+virt_clone	create-kvm.sh	/^virt_clone(){$/;"	f
+wantQuit	EasyXMS/EasyXMS.py	/^    def wantQuit(self):$/;"	m	class:PrintHelp
+wep_fake_auth	wifite.py	/^    def wep_fake_auth(self, iface, target, time_to_display):$/;"	m	class:WEPAttack
+wep_send_deauths	wifite.py	/^    def wep_send_deauths(self, iface, target, clients):$/;"	m	class:WEPAttack
+wpa_crack	wifite.py	/^def wpa_crack(capfile, RUN_CONFIG):$/;"	f
+wpa_get_handshake	wifite.py	/^    def wpa_get_handshake(self):$/;"	m	class:WPAAttack
+wps_check_targets	wifite.py	/^def wps_check_targets(targets, cap_file, verbose=True):$/;"	f
+writeCommandResultToFile	EasyXMS/EasyXMS.py	/^    def writeCommandResultToFile(self, result_list):$/;"	m	class:ReadWriteConfigFile
+writeCommandToFile	EasyXMS/EasyXMS.py	/^    def writeCommandToFile(self,cmd):$/;"	m	class:ReadWriteConfigFile
+writeFile	EasyXMS/EasyXMS.py	/^    def writeFile(self,data,server_list):$/;"	m	class:ReadWriteConfigFile
+writeIPToFile	EasyXMS/EasyXMS.py	/^    def writeIPToFile(self):$/;"	m	class:ReadWriteConfigFile
+youSureEmptyFile	EasyXMS/EasyXMS.py	/^    def youSureEmptyFile(self):$/;"	m	class:PrintHelp

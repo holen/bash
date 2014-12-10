@@ -1,0 +1,6 @@
+<disk type='file' device='disk'>
+    <driver name='qemu' type='qcow2' cache='writethrough'/>
+    <source file='/data/kvmdb/disk-test.img'/>
+    <target dev='vdd' bus='virtio'/>
+</disk> 
+

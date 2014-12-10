@@ -2,7 +2,7 @@
 ## innobackupex full back bash
  
 ###### Dedine Parameters ###############
-Remote_dir='/data/backup/mysql'
+Remote_dir='/backup/mysql'
 Rsync=`which rsync`
 Num=$[`date +%s`/86400%3]
 Full_bak='mysql-bak'
@@ -12,7 +12,7 @@ Full_three='mysql-three'
 Full_mon='mysql-mon'
 Today=`date +%d`
 USER='innobackup'
-PASSWORD='w.cn@back@'
+PASSWORD='1234qwer'
 LOG_DIR='/var/log/bak_log'
 LOG="${LOG_DIR}/fullbak-$(date +%Y%m%d%H%M).log"
 Back_result=0
@@ -28,7 +28,7 @@ Dir_mkdir()
 Dir_mkdir $LOG_DIR
 Dir_mkdir ${Remote_dir}
 
-if [ "`df -h | grep -c "10.10.10.35"`" != "1" ];then
+if [ "`df -h | grep -c "10.10.11.104"`" != "1" ];then
 	echo "The nfs storge is not mount!" >> $LOG
 	Back_result=1
 	exit 0
@@ -43,6 +43,12 @@ if [ -d ${Remote_dir}/${Full_bak} ]; then
 	/bin/rm -rf ${Remote_dir}/${Full_bak}
 fi
   
+echo "############################################" >> $LOG
+echo "Start to full backup at $(date +%Y%m%d%H%M)" >> $LOG
+ 
+################ Full Backup  #######################  
+innobackupex --user=$USER --password=$PASSWORD --no-timestamp ${Remote_dir}/${Full_bak} 2>>$LOG
+
 Print_error()
 {
 	if [ $? -eq 0 ];then
@@ -68,12 +74,6 @@ Rsync_to_mon()
 	fi
 }
   
-echo "############################################" >> $LOG
-echo "Start to full backup at $(date +%Y%m%d%H%M)" >> $LOG
- 
-################ Full Backup  #######################  
-innobackupex --user=$USER --password=$PASSWORD --no-timestamp ${Remote_dir}/${Full_bak} 2>>$LOG
-
 if [ $? -eq 0 ]; then
         echo "###### Mysql full backup is Finished at $(date +%Y%m%d%H%M)! #########" >> $LOG
 	echo "" >> $LOG
