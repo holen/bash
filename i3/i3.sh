@@ -34,3 +34,6 @@ wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.
 
 xrandr --output VGA1 --mode 1440x900 --left-of HDMI1
 xrandr --output HDMI1 --mode 1600x900 --right-of VGA1
+
+# genpasswd
+# strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 8 | tr -d '\n'; echo
