@@ -21,11 +21,13 @@ apt-get install diodon
 # aira2  --> download tool
 # apvlv  --> pdf tool
 # scrot  --> capture a screenshot 
+# diodon --> GTK+ Clipboard Manager
 # ipcalc --> An IP Netmask/broadcast/etc calculator
 # StarDict --> A Cross-Platform and international dictionary written in Gtk2 http://www.stardict.org/
 # alsamixer - soundcard mixer for ALSA soundcard driver, with ncurses interface
 # cheat  --> cheat allows you to create and view interactive cheatsheets on the command-line.  
 # landscape-common - Display a summary of the current system status
+# mdp    --> A command-line based markdown presentation tool (PPT).
 apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer cheat ttf-wqy-microhei ttf-wqy-microhei landscape-common
 
 # Download dictionary and mv to /usr/share/stardict/dic/
