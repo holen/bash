@@ -1,5 +1,5 @@
 # install vsftp 
-apt-get install -y vsftp
+    apt-get install -y vsftpd
 
 # vsftp conf 
 
