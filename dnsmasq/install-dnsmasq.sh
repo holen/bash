@@ -32,3 +32,5 @@ address=/abc.com/1.2.3.4" >> /etc/dnsmasq.conf
 echo "nameserver 8.8.8.8" > /etc/dnsmasq-resolv
 
 service dnsmasq restart
+
+# /etc/init.d/dnsmasq restart
