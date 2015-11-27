@@ -25,7 +25,9 @@ addn-hosts=/etc/dnsmasq-hosts
 #dhcp-range=10.10.10.200,10.10.10.250,48h
 #log-dhcp
 log-queries
-log-facility=/var/log/dnsmasq.log" >> /etc/dnsmasq.conf
+log-facility=/var/log/dnsmasq.log
+server=/google.com/8.8.8.8
+address=/abc.com/1.2.3.4" >> /etc/dnsmasq.conf
 
 echo "nameserver 8.8.8.8" > /etc/dnsmasq-resolv
 
