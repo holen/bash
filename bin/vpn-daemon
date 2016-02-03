@@ -1,0 +1,58 @@
+#!/bin/bash
+# description: 
+
+RETVAL=0
+pidfile="/var/run/sshuttle.pid"
+
+start() {
+        # Start daemons.
+        if [ ! -z "$1" ];then
+		PROXY_IP="$1"
+	else
+            	echo "Warn: No proxy ip"
+		PROXY_IP="5.2.2.2"
+	fi
+
+        echo -n $"Starting vpsvpn: "
+	prog="sshuttle -NHr root@$PROXY_IP 0.0.0.0/0 -vv --daemon --pidfile=$pidfile"
+        $prog &
+        RETVAL=$?
+        [ $RETVAL -eq 0 ] && echo "Vpn start success ."|| echo "Vpn start failed."
+	echo
+        return $RETVAL
+}
+
+stop() {
+        # Stop daemons.
+        echo -n $"Shutting down vpsvpn: "
+	pid=`cat $pidfile`
+	kill -9 $pid
+        RETVAL=$?
+	rm -rf $pidfile
+        echo
+        [ $RETVAL -eq 0 ] && echo "Killed vpsvpn" || echo "Stop failed"
+        return $RETVAL
+}
+
+# call the function we defined
+case "$1" in
+  start)
+        start $2
+        ;;
+  stop)
+        stop
+        ;;
+  restart|reload)
+        stop
+        start $2
+        RETVAL=$?
+        ;;
+  status)
+	[ -f "$pidfile" ] && echo "sshuttle running." || echo "sshuttle no running ."
+        ;;
+  *)
+        echo $"Usage: $0 [proxy_ip] {start|stop|restart|reload|status}"
+        exit 2
+esac
+ 
+exit $RETVAL
