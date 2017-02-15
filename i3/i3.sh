@@ -30,7 +30,7 @@ apt-get install diodon
 # mdp    --> A command-line based markdown presentation tool (PPT).
 apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer cheat ttf-wqy-microhei ttf-wqy-microhei landscape-common
 
-# Download dictionary and mv to /usr/share/stardict/dic/
+# Download dictionary and extract to /usr/share/stardict/dic/
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.bz2
 
