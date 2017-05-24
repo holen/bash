@@ -28,14 +28,15 @@ apt-get install diodon
 # cheat  --> cheat allows you to create and view interactive cheatsheets on the command-line.  
 # landscape-common - Display a summary of the current system status
 # mdp    --> A command-line based markdown presentation tool (PPT).
-apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer cheat ttf-wqy-microhei ttf-wqy-microhei landscape-common
+# parcellite --> Clipboard CLI
+apt-get install -y aria2 apvlv cmus vlc wicd scrot feh stardict sdcv ipcalc alsamixer cheat ttf-wqy-microhei ttf-wqy-microhei landscape-common parcellite
 
 # Download dictionary and extract to /usr/share/stardict/dic/
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-cedict-gb-2.4.2.tar.bz2
 wget http://abloz.com/huzheng/stardict-dic/zh_CN/stardict-stardict1.3-2.4.2.tar.bz2
 
-xrandr --output VGA1 --mode 1440x900 --left-of HDMI1
-xrandr --output HDMI1 --mode 1600x900 --right-of VGA1
+# xrandr --output VGA1 --mode 1440x900 --left-of HDMI1
+# xrandr --output HDMI1 --mode 1600x900 --right-of VGA1
 
 # genpasswd
 # strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 8 | tr -d '\n'; echo

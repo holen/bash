@@ -13,3 +13,6 @@ with a mind towards faster and more efficient browsing.
 * Inline Translator (Clientid:876899a1-6050-4371-965d-f39028ae644c secret:dwC0LSDCxZo6UfnCqHqIOw46tSYRzsOXNRqlNem8KuI=)
 * LastPass
 * Vimperator
+* Adblock
+* 趣查
+* HackBar
