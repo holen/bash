@@ -16,3 +16,8 @@ with a mind towards faster and more efficient browsing.
 * Adblock
 * 趣查
 * HackBar
+* uBlock Origin
+* Xmarks Bookmark
+* Awesome screenshot plus
+* Tridactyl
+* ydwd
